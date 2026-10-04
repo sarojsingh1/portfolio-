@@ -1,0 +1,260 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #222222;
+  background-color: #f4f7fb;
+}
+
+
+header {
+  background-color: #172a46;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 20px 30px;
+}
+
+header h1 {
+  margin: 0 0 10px;
+  font-size: 2.5rem;
+}
+
+header p {
+  margin: 0 0 25px;
+  font-size: 1.1rem;
+  color: #d9e4f2;
+}
+
+
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+}
+
+nav a:hover {
+  color: #65c7ff;
+}
+
+
+
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+section {
+  background-color: #ffffff;
+  margin-bottom: 30px;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+  color: #172a46;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  border-bottom: 3px solid #65c7ff;
+  padding-bottom: 8px;
+}
+
+
+
+#about img {
+  display: block;
+  width: 300px;
+  height: auto;
+  max-width: 100%;
+  margin: 0 auto 25px;
+  border-radius: 12px;
+}
+
+#about p {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+
+
+#skills dl {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 15px 25px;
+  margin: 0;
+}
+
+#skills dt {
+  font-weight: bold;
+  color: #172a46;
+}
+
+#skills dd {
+  margin: 0;
+  color: #444444;
+}
+
+
+#projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+#projects h2 {
+  grid-column: 1 / -1;
+}
+
+#projects article {
+  padding: 25px;
+  background-color: #f4f7fb;
+  border-left: 5px solid #65c7ff;
+  border-radius: 8px;
+}
+
+#projects article h3 {
+  margin-top: 0;
+  color: #172a46;
+}
+
+#projects article p {
+  color: #444444;
+}
+
+#projects article a {
+  color: #1769aa;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#projects article a:hover {
+  text-decoration: underline;
+}
+
+#contact form {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#contact label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #172a46;
+}
+
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #b8c4d1;
+  border-radius: 6px;
+  font: inherit;
+  background-color: #ffffff;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 2px solid #65c7ff;
+  border-color: #1769aa;
+}
+
+#contact textarea {
+  resize: vertical;
+}
+
+#contact button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  background-color: #1769aa;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#contact button:hover {
+  background-color: #124f80;
+}
+
+
+footer {
+  background-color: #172a46;
+  color: #ffffff;
+  text-align: center;
+  padding: 25px 20px;
+}
+
+footer p {
+  margin: 0;
+}
+
+
+
+@media (max-width: 700px) {
+
+  header {
+    padding: 35px 15px 25px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  main {
+    padding: 25px 15px;
+  }
+
+  section {
+    padding: 25px 20px;
+  }
+
+  #skills dl {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
+  #skills dd {
+    margin-bottom: 15px;
+  }
+
+  #projects {
+    grid-template-columns: 1fr;
+  }
+
+  #about img {
+    width: 250px;
+  }
+}
+```
