@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
-  <title>Saroj Singh  | Portfolio</title>
+  <title>Saroj Singh | Portfolio</title>
 </head>
+
 <body>
 
   <header>
@@ -23,13 +25,14 @@
 
   <main>
 
+
     <section id="about">
       <h2>About Me</h2>
-    
-        <img src="saroj.jpeg" alt="Portrait of Saroj Singh smiling at the camera" width="500" height="479">
-        <h2>About me </h2>
 
-  
+      <img src="saroj.jpeg" alt="Portrait of Saroj Singh smiling at the camera" width="500" height="479">
+      <h2>About me </h2>
+
+
       <p>
         I am a second-year Bachelor of Information Technology student at Modern
         Institute of Technology in Kamaladi, Kathmandu. Alongside my studies, I
@@ -72,6 +75,44 @@
       </article>
     </section>
 
+    <section id="image-slider" class="slider-section">
+      <h2>Image Slider</h2>
+      <p>Explore the images using the navigation arrows or indicator dots.</p>
+
+      <div class="slider" aria-label="Image gallery">
+        <div class="slider-viewport">
+          <div class="slider-track">
+            <div class="slide">
+              <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=85"
+                alt="Mountain landscape beneath a wide sky">
+            </div>
+
+            <div class="slide">
+              <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1400&q=85"
+                alt="Lake surrounded by mountains">
+            </div>
+
+            <div class="slide">
+              <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1400&q=85"
+                alt="Mountain peaks under the clouds">
+            </div>
+
+            <div class="slide">
+              <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1400&q=85"
+                alt="Sunlight passing through a green forest">
+            </div>
+          </div>
+        </div>
+
+        <button class="slider-btn prev" type="button" aria-label="Previous image">&#10094;</button>
+
+        <button class="slider-btn next" type="button" aria-label="Next image">&#10095;</button>
+
+        <div class="slider-dots" role="group" aria-label="Choose an image"></div>
+      </div>
+    </section>
+
+
     <section id="contact">
       <h2>Contact</h2>
       <form action="#" method="post">
@@ -93,11 +134,15 @@
       </form>
     </section>
 
+
   </main>
 
   <footer>
     <p>&copy; 2026 Saroj Singh. All rights reserved.</p>
   </footer>
 
+  <script src="slider.js" defer></script>
+
 </body>
+
 </html>
